@@ -1,0 +1,21 @@
+{
+  "BUILD_URL": "https://jenkins.url/job/project/job/master-build/1/",
+  "TIMESTAMP": {
+    "STARTED": 1501165800,
+    "COMPLETED": 1501166800
+  },
+  "REVISION": {
+    "HEAD": "abaca",
+    "MASTER": "dabraca"
+  },
+  "MANIFEST": {
+    "VERSION": "1.0.0",
+    "ACTION": "build",
+    "ASSETS": "assets.json",
+    "STEP_TIMINGS": "step-timings.json"
+  },
+  "ENVIRONMENT": {
+    "CACHE_TARBALL": "v2.tgz",
+    "NODE_NAME": "n2"
+  }
+}

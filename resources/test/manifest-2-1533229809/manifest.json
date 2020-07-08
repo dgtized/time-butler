@@ -1,0 +1,24 @@
+{
+  "BUILD_URL": "https://jenkins.url/job/project/job/manifest/2/",
+  "TIMESTAMP": {
+    "STARTED": 1533226167,
+    "COMPLETED": 1533229809
+  },
+  "REVISION": {
+    "HEAD": "ec33444d",
+    "MASTER": "746f6950"
+  },
+  "MANIFEST": {
+    "VERSION": "1.0.0",
+    "ACTION": "build",
+    "ASSETS": "assets.json",
+    "STEP_TIMINGS": "step-timings.json"
+  },
+  "ENVIRONMENT": {
+    "CACHE_TARBALL": "v2.tgz",
+    "NODE_NAME": "n1",
+    "PARALLELISM": 6,
+    "PERCY_ENABLE": 0,
+    "SYSCONFCPUS_PROCESSORS": 2
+  }
+}

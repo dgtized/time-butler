@@ -1,0 +1,48 @@
+{:deps
+ {org.clojure/clojure {:mvn/version "1.10.1"}
+  org.clojure/spec.alpha {:mvn/version "0.2.187"}
+  me.raynes/fs {:mvn/version "1.4.6"}
+  incanter {:mvn/version "1.9.3"
+            :exclusions [incanter/incanter-excel
+                         incanter/incanter-mongodb
+                         incanter/incanter-sql
+                         incanter/incanter-pdf
+                         swingrepl/swingrepl
+                         joda-time]}
+  org.clojure/data.json {:mvn/version "1.0.0"}
+  org.clojure/tools.cli {:mvn/version "1.0.194"}
+  hiccup {:mvn/version "1.0.5"}
+  clojure.java-time {:mvn/version "0.3.2"}
+  org.clojure/tools.logging {:mvn/version "1.1.0"}
+  log4j/log4j {:mvn/version "1.2.17"
+               :exclusions [javax.mail/mail
+                            javax.jms/jms
+                            com.sun.jmdk/jmxtools
+                            com.sun.jmx/jmxri]}
+  amazonica {:mvn/version "0.3.152"
+             :exclusions [com.amazonaws/aws-java-sdk
+                          com.amazonaws/amazon-kinesis-client
+                          com.amazonaws/dynamodb-streams-kinesis-adapter
+                          org.clojure/tools.reader]}
+  circleci/rollcage {:mvn/version "1.0.165" :exclusions [commons-logging]}
+  com.amazonaws/aws-java-sdk-core {:mvn/version "1.11.783" :exclusions [commons-logging]}
+  com.amazonaws/aws-java-sdk-s3 {:mvn/version "1.11.783" :exclusions [commons-logging]}
+  danlentz/clj-uuid {:mvn/version "0.1.9"}}
+ :paths ["src" "resources" "classes"]
+ :aliases
+ ;; invoke time-butler.cli.-main with:
+ ;; clj -m time-butler.cli --help
+ {;; see bin/package.sh
+  :uberdeps {:extra-deps {uberdeps {:mvn/version "0.1.10"}}
+             :main-opts ["-m" "uberdeps.uberjar"]}
+
+  ;; clj -Aoutdated
+  :outdated {:extra-deps {olical/depot {:mvn/version "RELEASE"}}
+             :main-opts ["-m" "depot.outdated.main"]}
+
+  ;; See bin/kaocha for running tests
+  :kaocha {:extra-paths ["test"]
+           :extra-deps {lambdaisland/kaocha {:mvn/version "1.0.632"}
+                        lambdaisland/kaocha-junit-xml {:mvn/version "0.0-70"}
+                        lambdaisland/kaocha-cloverage {:mvn/version "1.0-45"}}}
+  }}

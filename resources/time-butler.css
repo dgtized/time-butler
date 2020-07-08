@@ -1,0 +1,21 @@
+#container {
+  width: 1020px;
+}
+
+.fixed-width {
+  width: 66%;
+}
+
+.col-width40 { width: 40%; }
+.col-width25 { width: 25%; }
+.col-width5 { width: 5%; }
+
+tbody {
+  font-family: monospace;
+}
+tr:nth-child(even) {
+  background-color: #eee;
+}
+td {
+  padding: 4px;
+}

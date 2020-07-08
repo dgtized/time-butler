@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="4" skipped="0" failures="0" errors="0" time="3.2" timestamp="2017-08-22T09:22:56+00:00" hostname="somewhere">
+<properties>
+<property name="seed" value="1"/>
+</properties>
+<testcase classname="package.class.one" name="Test1" file="./spec/package/class/one.rb" time="0.5"></testcase>
+<testcase classname="package.class.one" name="Test2" file="./spec/package/class/one.rb" time="1.0"></testcase>
+<testcase classname="package.class.two" name="Test" file="./spec/package/class/two.rb" time="2.0"></testcase>
+<testcase classname="package.class.one" name="Test2" file="./spec/package/class/one.rb" time="2.0"></testcase>
+<testcase classname="package.class.two" name="Failing Test" file="./spec/package/class/two.rb" time="0.5">
+    <failure message="Unexpected results" type="Capybara::ElementNotFound">Failure/Error: Unexected result</failure>
+</testcase>
+</testsuite>

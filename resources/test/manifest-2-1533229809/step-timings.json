@@ -1,0 +1,7 @@
+[{"name":"bootstrap.a","real":15.23,"user":14.9,"system":1.91,"elapsed":"0:15.23","cpu":110},
+{"name":"bootstrap.b","real":11.18,"user":1.8,"system":0.24,"elapsed":"0:11.18","cpu":18},
+{"name":"compile.assets","real":1473.29,"user":3917.0,"system":3811.4,"elapsed":"24:33.29","cpu":524},
+{"name":"compile.database","real":125.96,"user":50.83,"system":6.35,"elapsed":"2:05.96","cpu":45},
+{"name":"compile.rubocop","real":140.74,"user":126.41,"system":0.79,"elapsed":"2:20.74","cpu":90},
+{"name":"test.elm","real":2128.12,"user":2247.01,"system":583.69,"elapsed":"35:28.12","cpu":133},
+{"name":"test.ruby-specs","real":1376.82,"user":4454.01,"system":200.6,"elapsed":"22:56.82","cpu":338}]

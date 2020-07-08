@@ -1,0 +1,20 @@
+* Tasks
+** TODO Consider ordering graphs series in descending order
+
+   A little tricky as I think needs to calculate either average or median value of each line over the time period in order to rank in the series, but worth trying at some point.
+
+** TODO Specify series color more carefully to ignore the invisible yellow
+
+   I think could just have a color array and call set line color after each series definition?
+
+** TODO Add median, and 90th percentile to raw json output in addition to mean? 
+** TODO Normalize flake/failure percentage graphs and report count separately
+** TODO Namespace Rollbar UUID by project somehow to avoid project collisions
+
+If TimeButler is used on multiple projects the project name should probably be
+included in the uuid generation so uuid's for items are namespaced to a
+particular project. Only problem is that doing this will generate new uuid's for
+existing installs, breaking the existing histories.
+
+
+
