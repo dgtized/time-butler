@@ -268,6 +268,6 @@ bin/kaocha
 
 ## License
 
-Copyright © 2020 Charles L.G. Comstock
+Copyright © 2020-2021 Charles L.G. Comstock
 
 Distributed under the MIT Public License, see LICENSE file
