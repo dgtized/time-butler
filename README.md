@@ -1,6 +1,14 @@
 # time-butler
 
-Analysis of time used in Jenkins jobs recorded to S3
+A cross-build monitoring tool for identifying performance bottlenecks and
+non-deterministic tests.
+
+Uploads step timing and aggregate test results from builds and deploys to S3,
+and then generates graphs of times and success/failure/flake rates over time. It
+identifies non-deterministic tests by comparing test results with the commit
+SHA, and logs any tests that have different results attached to the same SHA
+from later builds. After identifying flaking tests it can be configured to
+report them to Rollbar, allowing teams to assign ownership to fix them.
 
 ## Installation
 
